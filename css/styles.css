@@ -10941,14 +10941,26 @@ header.masthead h1, header.masthead .h1 {
   /* background-color: #9b02e7; */
 }
 /*Secciones */
+.page-section{
+  background-color: #9b02e7;
+  display: flex;
+  align-items: center;
+}
 #seccion-1{
   background-image: url("../img/seccion-1.jpeg");
+}
+#seccion-2{
+  background-image: url("../img/seccion-2.jpeg");
+}
+#seccion-1,
+#seccion-2{
   height: 100%!important;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
-.seccion-1{
+.seccion-1,
+.seccion-2{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10rem;
@@ -10956,16 +10968,16 @@ header.masthead h1, header.masthead .h1 {
 .seccion-1__txt h2{
   font-size: 5rem;
 }
-.seccion-1__txt h2,h3{
+.seccion-1__txt h2,h3,
+.seccion-2__txt h2,h3{
   color: white;
   font-family: var(--fuente-seccion) !important;
   text-transform: uppercase;
   font-weight: 700;
 }
-.page-section{
-  background-color: #9b02e7;
-  display: flex;
-  align-items: center;
+.seccion-2__txt h2{
+  color: #9b02e7;
+  font-size: 4rem;
 }
 .seccion-mkt{
   padding: 3rem 0;
