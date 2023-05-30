@@ -10940,8 +10940,9 @@ header.masthead h1, header.masthead .h1 {
   /* background-color: #9b02e7; */
 }
 /*Servicios */
-#services{
+#seccion-1{
   background-color: white;
+  background-image: url("../img/seccion-1.jpeg");
 }
 .page-section{
   background-color: #9b02e7;
