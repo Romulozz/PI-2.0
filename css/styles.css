@@ -10833,7 +10833,7 @@ hr.divider-light {
   #mainNav .navbar-brand:hover {
     color: #fff;
   }
-  #mainNav .navbar-nav .nav-item .nav-link {
+  #mainNav .navbar-nav .nav-item .nav-link{
     color: rgba(255, 255, 255, 0.7);
     padding: 0 1rem;
   }
@@ -10858,6 +10858,97 @@ hr.divider-light {
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
     color: #f4623a;
+  }
+}
+
+/* Nav-Bar Productos*/
+#mainNavB {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  transition: background-color 0.2s ease;
+}
+#mainNavB .navbar-brand {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #212529;
+}
+#mainNavB .navbar-nav .nav-item .nav-link {
+  color: #6c757d;
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.75rem 0;
+}
+#mainNavB .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
+  color: #f4623a;
+}
+#mainNavB .navbar-nav .nav-item .nav-link.active{
+  color: #f4623a !important;
+}
+@media (min-width: 992px) {
+  #mainNavB {
+    box-shadow: none;
+    background-color: transparent;
+  }
+  #mainNavB .navbar-brand {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  #mainNavB .navbar-brand:hover {
+    color: #fff;
+  }
+  #mainNavB .navbar-nav .nav-item .nav-link{
+    color: #b3b4b7;
+    padding: 0 1rem;
+  }
+  #mainNavB .navbar-nav .nav-item .nav-link:hover {
+    color: black;
+  }
+  #mainNavB .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0;
+  }
+  #mainNavB.navbar-shrink {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+  }
+  #mainNavB.navbar-shrink .navbar-brand {
+    color: #212529;
+  }
+  #mainNavB.navbar-shrink .navbar-brand:hover {
+    color: #f4623a;
+  }
+  #mainNavB.navbar-shrink .navbar-nav .nav-item .nav-link {
+    color: #212529;
+  }
+  #mainNavB.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
+    color: #f4623a;
+  }
+}
+/* Nav-Bar Productos FIN*/
+
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/ImagenFondo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.masthead h1, header.masthead .h1 {
+  font-size: 2.25rem;
+}
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+  header.masthead h1, header.masthead .h1 {
+    font-size: 3rem;
   }
 }
 
@@ -10887,6 +10978,7 @@ header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
   }
 }
+
 @media (min-width: 1200px) {
   header.masthead h1, header.masthead .h1 {
     font-size: 3.5rem;
@@ -10988,5 +11080,25 @@ header.masthead h1, header.masthead .h1 {
 
 /* Productos */
 #productos{
-    margin: 10rem 0;
+    margin: 8rem 0;
 }
+.seccion-prod{
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.producto__txt h2{
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 2rem;
+}
+.botones__productos{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.btn-p, .btn-p__s{
+  width: 20rem;
+  border-radius: 2rem;
+}
+
+
+
